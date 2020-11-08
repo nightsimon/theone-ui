@@ -1,5 +1,7 @@
 # theone-ui
-
+## 说明
+---
+- src/example 是每个组件的测试 demo, 需要在 app.vue 中测试
 ## Project setup
 ```
 yarn install
