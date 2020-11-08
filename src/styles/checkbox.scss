@@ -1,0 +1,29 @@
+
+/* 复选框 wo-checkbox */
+
+.wo-input-checkbox{
+  display: inline-block; 
+  background: url('~@/assets/Images/未勾选.svg') left center no-repeat;
+  background-size: 90%;
+  padding: 1px;
+  box-sizing: border-box;
+  margin: 0; 
+}
+.wo-input-checkbox.checked{
+  background: url('~@/assets/Images/已勾选.svg') left center no-repeat;
+  background-size: 90%;
+}
+
+.wo-input-checkbox input[type=checkbox]{
+  height: 1.2em;
+  width: 1em;
+  font-size: 1em;
+  vertical-align: middle;
+  filter:alpha(opacity=0);   
+  -moz-opacity:0;   
+  -khtml-opacity: 0;   
+  opacity: 0;  
+  cursor: pointer;  
+  margin: 0;
+  padding: 0;
+}

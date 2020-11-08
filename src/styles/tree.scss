@@ -1,0 +1,113 @@
+.wo-tree {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+  .wo-tree,
+  .wo-tree * {
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .wo-tree-children {
+    padding-left: 1.2em;
+    border-left: 1px dotted;
+    margin-left: .5em;
+  }
+  .wo-tree-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+  }
+  .wo-tree-join {
+    height: 100%;
+    width: 1em;
+    display: inline-block;
+    position: relative;
+  }
+  .wo-tree-join-bottom {
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-left: 1px dotted;
+    border-top: 1px dotted;
+  }
+  .wo-tree-join-top {
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border-left: 1px dotted;
+    border-bottom: 1px dotted;
+  }
+  .wo-tree-join-bottom.wo-tree-in-last-node,
+  .wo-tree-children.wo-tree-in-last-node {
+    border-color: transparent;
+  }
+  .wo-tree-root:first-child
+  .wo-tree-join.wo-tree-join-root .wo-tree-join-top,
+  .wo-tree-root:last-child
+  .wo-tree-join.wo-tree-join-root .wo-tree-join-bottom {
+    border-left: none;
+  }
+  .wo-tree-cont {
+    height: 1.75em;
+    position: relative;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    padding-left: .5em;
+  }
+  .wo-tree-node:first-child 
+  .wo-tree-cont {
+    margin-top: 0;
+  }
+  .wo-tree-node:last-child 
+  .wo-tree-cont {
+    margin-bottom: 0;
+  }
+  .wo-tree-center,
+  .wo-tree-left {
+    display: inline-block;
+  }
+  .wo-tree-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding-right: .25em;
+  }
+  .wo-tree-left a,
+  .wo-tree-right a {
+    text-decoration: none;
+  }
+  .wo-tree-cont .wo-input-checkbox {
+    height: 100%;
+  }
+  .wo-tree-cont:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .wo-tree-cont.wo-tree-node-selected {
+    background: rgba(255,255,255,0.2);
+  }
+  .wo-tree-tool {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+  }
+  .wo-tree-collapsed,
+  .wo-tree-expanded {
+    font: 'wo-win-iconfont';
+    font-family: "wo-win-iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wo-tree-expanded:before {
+    content: "\e625";
+  }
+  .wo-tree-collapsed:before {
+    content: "\e624";
+  }

@@ -1,0 +1,456 @@
+/* 复选框 wo-checkbox */
+.wo-input-checkbox {
+  display: inline-block;
+  background: url('/src/assets/Images/未勾选.svg') left center no-repeat;
+  background-size: 90%;
+  padding: 1px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.wo-input-checkbox.checked {
+  background: url('/src/assets/Images/已勾选.svg') left center no-repeat;
+  background-size: 90%;
+}
+.wo-input-checkbox input[type=checkbox] {
+  height: 1.2em;
+  width: 1em;
+  font-size: 1em;
+  vertical-align: middle;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+/* 进度条 */
+.wo-progress {
+  position: relative;
+  border-radius: 0;
+  background: rgba(235,235,235,0.10);
+  display: inline-block;
+  min-width: 10em;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.wo-progress-bar {
+  background: #01CEF1;
+  text-align: right;
+  padding: 0.2em;
+}
+.wo-progress-value {
+  line-height: 1.2em;
+  font-family: AlibabaPuHuiTi-Medium;
+  color: white;
+  letter-spacing: 0;
+}
+.wo-progress-value span {
+  font-size: 0.85em;
+}
+
+/* 
+滑块wo-range样式
+ */
+.wo-input-range {
+  position: relative;
+  display: inline-block;
+}
+.wo-input-range-max {
+  width: 100%;
+  height: 40%;
+  top: 30%;
+  position: absolute;
+  background: rgba(235,235,235,0.10);
+}
+.wo-input-range-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wo-input-range-value {
+  width: 10%;
+  height: 34%;
+  top: 33%;
+  position: absolute;
+  background: #01CEF1;
+  /* display: inline-block; */
+}
+.wo-input-range-bar {
+  /* right:  90%; */
+  width: .85em;
+  height: 100%;
+  /* line-height: 100%; */
+  text-align: center;
+  position: absolute;
+  background: #01CEF1;
+  margin-right: -0.45em;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wo-input-range input[type=range] {
+  font-size: 32px;
+  height: 1em;
+  vertical-align: middle;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  margin: 0;
+}
+.wo-input-range input[type=range]:hover,
+.wo-input-range input[type=range]:focus {
+  outline: 0;
+  border: none;
+}
+.wo-input-range  input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  font-size: 32px;
+  height: 1em;
+  width: 0.85em;
+  margin: 0;
+  margin-top: -14px;
+  /*使滑块超出轨道部分的偏移量相等*/
+  background: #ffffff;
+  border-radius: 0;
+  /*外观设置为圆形*/
+  border: solid 0.125em rgba(205, 224, 230, 0.5);
+  /*设置边框*/
+  box-shadow: 0 .125em .125em #3b4547;
+  /*添加底部阴影*/
+}
+/* 标签页（选项卡） wo-tabs,wo-tab-page*/
+.wo-tabs {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  overflow: auto;
+}
+.wo-tabs-header {
+  line-height: 30px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+}
+.wo-tab-title {
+  display: inline-block;
+  padding: 0 10px !important;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #4A5468;
+  white-space: nowrap;
+  flex: auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.wo-tab-title:hover,
+.wo-tab-title.active {
+  border: 1px solid #4A5468;
+  background: rgba(255, 255, 255, 0.10);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: none;
+  color: #01CEF1;
+}
+.wo-tab-title.active {
+  cursor: default;
+}
+.wo-tab-title img {
+  width: 1em;
+}
+.wo-tabs-body {
+  height: calc(100% - 31px);
+  margin-bottom: -1px;
+  overflow: auto;
+}
+.wo-tab-page {
+  display: none;
+  height: 100%;
+  /* padding: 7px;  */
+  /* max-width: calc(100% - 14px); */
+  overflow: auto;
+}
+.wo-tab-page.active {
+  display: block;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #4A5468;
+  border-top: none;
+}
+.wo-tab-page-inner {
+  max-width: calc(100% - 14px);
+  max-height: calc(100% - 15px);
+  margin: 7px;
+  overflow: auto;
+}
+/* 文件选择框 wo-file*/
+.wo-file-input-container  * {
+  box-sizing: border-box;
+}
+.wo-file-input-container {
+  display: inline-block;
+  position: relative;
+  background: rgba(255,255,255,0.08);
+  cursor: pointer;
+  display: inline-block;
+}
+.wo-file-input-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* padding-top: 3px; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.wo-file-input-container input[type=file] {
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  min-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  width: 100%;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.wo-lable-select-file {
+  display: inline-block;
+  max-width: calc(100% - 80px);
+  white-space: nowrap;
+  font-size: .85em;
+  cursor: pointer;
+  /* position: absolute; */
+  left: 5em;
+  /* top: .5em; */
+  /* height: 100%; */
+  box-sizing: border-box;
+  /* display: flex; */
+  /* align-items: center;*/
+  margin-left: 5px;
+}
+.wo-butn-select-file {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #01CEF1;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 0.85em;
+  color: #01CEF1;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3px;
+  padding: .1em .3em;
+  /* position: absolute; */
+  /* top: 5px; */
+  /* bottom: 5px;*/
+}
+/* 行 <div class="wo-row"></div>*/
+.wo-row {
+  padding: 2px;
+  /* width: 100%; */
+  white-space: nowrap;
+  display: block;
+}
+/* 按钮 <button class="wo-butn"></button>、<button class=".wo-butn-fill"></button>*/
+.wo-butn {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #01CEF1;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #01CEF1;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.wo-butn-fill {
+  background: #01CEF1;
+  border-radius: 2px;
+  font-family: AlibabaPuHuiTi-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #01CEF1;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  outline-width: 0;
+}
+.wo-butn:focus,
+.wo-butn-fill:focus {
+  outline-width: 0;
+}
+.wo-butn-fill:disabled,
+.wo-butn:disabled {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #CCCCCC;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 10px;
+  cursor: default;
+}
+/*按钮组<div class="wo-butn-group"><a class="wo-butn">button</a><a class="wo-butn-fill">button</a></div>*/
+.wo-butn-group {
+  display: flex;
+  padding: 5px;
+}
+.wo-butn-group .wo-butn-fill:focus,
+.wo-butn-group .wo-butn:focus {
+  border-color: rgba(1, 206, 241,1);
+}
+.wo-butn-group .wo-butn,
+.wo-butn-group .wo-butn-fill {
+  flex: 1;
+  display: inline-block;
+  margin-left: 2px;
+  border-color: rgba(1, 206, 241,.65);
+}
+.wo-butn-group .wo-butn:first-child {
+  margin-left: 0;
+}
+/* 输入框 <input class="wo-input" >*/
+input.wo-input,
+input[type=text].wo-input,
+input[type=number].wo-input {
+  padding: 5px 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #CCCCCC;
+  color: #FFFFFF;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  line-height: 20px;
+}
+input[type=file].wo-input {
+  padding: 3.5px;
+  border: none;
+  color: #FFFFFF;
+}
+input[type=file]:focus.wo-input {
+  border: none;
+  color: #FFFFFF;
+}
+/* input:focus.wo-input{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #01CEF1;
+    color: #FFFFFF;
+} */
+input:hover.wo-input,
+input:focus.wo-input {
+  background: rgba(255, 255, 255, 0.1);
+  background: none;
+  border: 1px solid #01CEF1;
+  color: #FFFFFF;
+  outline: none;
+}
+input:disabled.wo-input,
+input:disabled:hover.wo-input,
+input:disabled:focus.wo-input {
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  background: rgba(255,255,255,0.08);
+  color: rgba(204, 204, 204, 1);
+}
+/*下拉列表*/
+select.wo-select {
+  height: 32px;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+  border-color: #CCCCCC;
+}
+select.wo-select:focus {
+  outline: none;
+  border-color: #01CEF1;
+}
+/* 卡片 
+*/
+.wo-card-container {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #4A5468;
+  margin-bottom: 2px;
+}
+.wo-card-container:last-child {
+  margin-bottom: 0;
+}
+.wo-card-content {
+  width: 100%;
+  height: 100%;
+}
+.wo-row-16 {
+  margin: 16px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+/* 属性key-value */
+.wo-card-prop-key {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+}
+.wo-card-prop-value {
+  background: rgba(255,255,255,0.10);
+  border-radius: 2px;
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  min-width: 160px;
+}
+/*属性key-value组*/
+.wo-card-prop-container {
+  display: flex;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid #4A5468;
+  margin-bottom: 2px;
+}
+.wo-card-prop-container * {
+  box-sizing: border-box;
+}
+.wo-prop-key-cont {
+  text-align: right;
+}
+.wo-prop-value-cont {
+  text-align: left;
+  flex: auto;
+}
+.wo-prop-value-cont div,
+.wo-prop-key-cont * {
+  line-height: 32px;
+}
+.wo-prop-value-cont .wo-card-prop-value {
+  display: inline-block;
+}
+.wo-prop-value-cont .wo-card-prop-value,
+.wo-prop-value-cont .wo-select,
+.wo-prop-value-cont .wo-input {
+  width: 100%;
+}
+
+
+
+

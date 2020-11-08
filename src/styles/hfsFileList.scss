@@ -1,0 +1,31 @@
+.wo-hfs-file-list {
+  width: 100%;
+}
+.wo-hfs-file-list select.wo-input {
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #cccccc;
+  color: #ffffff;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  line-height: 20px;
+  height: 32px;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1em;
+}
+.wo-hfs-file-list select.wo-input {
+  width: 170px;
+  font-size: 14px;
+}
+.wo-hfs-file-list select.wo-input::-ms-expand {
+  display: none;
+}
+.wo-hfs-file-list select.wo-input:focus {
+  outline: none;
+}
+.wo-hfs-file-list .wo-card-container {
+  padding: 5px;
+}

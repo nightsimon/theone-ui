@@ -1,0 +1,71 @@
+.theone-table {
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.theone-table tr {
+  height: 30px;
+  color: white;
+}
+.theone-table thead {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.11);
+  font-weight: bold;
+}
+.theone-table input[type="checkbox"] {
+  display: unset;
+}
+.theone-table thead tr td,
+.theone-table tbody tr td:first-child {
+  text-align: center;
+}
+.theone-table thead tr td {
+  padding: 10px 0px 10px 5px;
+  position: relative;
+}
+.theone-table thead tr td::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 2%;
+  top: 36%;
+}
+.theone-table thead tr td:first-child:after,
+.theone-table thead tr td:last-child:after {
+  background: transparent;
+}
+.theone-table tbody tr {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.theone-table tbody tr:last-child {
+  border-bottom: none;
+}
+.theone-table tbody tr td:nth-child(1) {
+  position: relative;
+}
+.theone-table tbody tr:hover,
+.theone-table tbody tr:nth-child(even) {
+  background: rgba(250, 250, 250, 0.05);
+}
+.theone-table tbody tr td {
+  padding: 10px 0px 10px 5px;
+}
+.theone-table tr td.theone-table-operation {
+  padding-right: 5px;
+}
+.theone-table-operation .wo-butn {
+  padding: 0.25em 0.5em;
+  font-size: 0.85em;
+}
+.theone-table-operation a {
+  margin-left: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+}
